@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN useradd -m -s /bin/bash vagrant && echo "vagrant:vagrant" | chpasswd && adduser vagrant sudo
 RUN echo 'vagrant ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-RUN  sudo sed -i '/#VAGRANT-BEGIN/,/#VAGRANT-END/d' /etc/fstab || true
 
 ENV DEBIAN_FRONTEND=noninteractive
 
