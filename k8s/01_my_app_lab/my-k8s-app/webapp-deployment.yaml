@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webapp
+  template:
+    metadata:
+      labels:
+        app: webapp
+    spec:
+      containers:
+        - name: webapp
+          image: YOUR_APP_IMAGE # Change this to your container, e.g. my-k8s-app:latest
+          env:
+            - name: REDIS_HOST
+              value: "redis"
+          ports:
+            - containerPort: 5000
