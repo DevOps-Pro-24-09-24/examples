@@ -1,6 +1,6 @@
 [webservers]
-web ansible_host=web
+web ansible_host=test1.orb.local
 [dbservers]
-db ansible_host=db
+db ansible_host=test2.orb.local
 [all:vars]
 #ansible_python_interpreter=/usr/bin/python3

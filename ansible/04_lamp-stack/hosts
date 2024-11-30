@@ -1,6 +1,8 @@
 [webservers]
-web ansible_host=web
+web ansible_host=ubuntu1.orb.local
 [dbservers]
-db ansible_host=db
+db ansible_host=ubuntu2.orb.local
 [all:vars]
-#ansible_python_interpreter=/usr/bin/python3
+# ansible_python_interpreter=/usr/bin/python3
+ansible_user=root
+host_key_checking=False
