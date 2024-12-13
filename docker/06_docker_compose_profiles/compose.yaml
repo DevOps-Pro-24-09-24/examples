@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+#  web:
+#    image: my-web-app
+#    ports:
+#      - "80:80"
+#    profiles:
+#      - web
+
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    profiles:
+      - db
+
+  cache:
+    image: redis:alpine
+    profiles:
+      - cache
