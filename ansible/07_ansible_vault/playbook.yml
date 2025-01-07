@@ -1,7 +1,7 @@
 # playbook.yml
 - hosts: localhost
   vars_files:
-    - secrets.yml
+    - 03_secrets.yml
   tasks:
     - name: Print the database password
       debug:

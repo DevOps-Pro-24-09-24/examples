@@ -14,7 +14,7 @@ Run your app in Kubernetes
 
 ```shell
 ```bash
-kubectl apply -f ./nginx-configmap.yaml
+kubectl apply -f nginx-configmap.yaml
 kubectl apply -f redis-deployment.yaml
 kubectl apply -f redis-service.yaml
 kubectl apply -f webapp-deployment.yaml

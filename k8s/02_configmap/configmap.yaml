@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config
+data:
+  APP_ENV: "production"
+  APP_DEBUG: "false"
+  CONFIG_FILE: |
+    key1=value1
+    key2=value2

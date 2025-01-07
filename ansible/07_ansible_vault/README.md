@@ -1,6 +1,6 @@
 
 ```shell
-ansible-vault encrypt secrets.yml
+ansible-vault encrypt 03_secrets.yml
 ansible-playbook playbook.yml --ask-vault-pass
 ```
 

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: YOUR_APP_IMAGE # Change this to your container, e.g. my-k8s-app:latest
+          image: eleutherius69/flaskapp # Change this to your container, e.g. my-k8s-app:latest
           env:
             - name: REDIS_HOST
               value: "redis"
